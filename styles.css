@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.demo:not(:empty) {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  display: block;
+}
+
+/**
+  💡 Vous aurez besoin de:
+    - input:focus
+    - input:invalid
+    - input:checked ou div:has(input:checked)
+*/
